@@ -30,7 +30,7 @@ ip adress: 0.0.0.0/0 for access anywhere
 
 # in the LoginScreen.js and RegisterScreen.js folder
  
-> axios.post("http://localhost:8000/login", user -> change the localhost for your pc ip adress
+axios.post("http://localhost:8000/login", user -> change the localhost for your pc ip adress
 
 --------------------------------------------------------------
 
