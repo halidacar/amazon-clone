@@ -39,7 +39,7 @@ const LoginScreen = () => {
       password: password,
     };
     axios
-      .post("http://10.22.241.181:8000/login", user)
+      .post("http://localhost/login", user)
       .then((response) => {
         console.log(response);
         const token = response.data.token;
