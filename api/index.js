@@ -15,6 +15,7 @@ app.use(bodyParser.json());
 
 const jwt = require("jsonwebtoken");
 
+// database connection
 mongoose
   .connect("mongodb+srv://acarhalid:1357951@cluster0.tf88se9.mongodb.net/", {
     useNewUrlParser: true,
@@ -89,9 +90,8 @@ app.post("/register", async (req, res) => {
     res.status(500).json({ message: "Registration failed" });
   }
 });
-
 // endpoint to verify the email address
-app.get("/verify/:token", async function (req, res) {
+app.get("/verify/:token", async (req, res) => {
   try {
     const token = req.params.token;
 
@@ -109,5 +109,36 @@ app.get("/verify/:token", async function (req, res) {
     res.status(200).json({ message: "Email verified successfully" });
   } catch (error) {
     res.status(500).json({ message: "Email Verification Failed" });
+  }
+});
+
+const generateSecretKey = () => {
+  const secretKey = crypto.randomBytes(32).toString("hex");
+  return secretKey;
+};
+const secretKey = generateSecretKey();
+
+//endpoint to login the User
+
+app.post("/login", async (req, res) => {
+  try {
+    const { email, password } = req.body;
+
+    //check if the user exists
+    const user = await User.findOne({ email });
+    if (!user) {
+      return res.status(401).json({ message: "User not found" });
+    }
+
+    //check if the password is correct
+    if (user.password !== password) {
+      return res.status(401).json({ message: "Invalid Password" });
+    }
+
+    //generate token if everything is correct
+    const token = jwt.sign({ userId: user._id }, secretKey);
+    res.status(200).json(token);
+  } catch (error) {
+    res.status(500).json({ message: "Login Failed" });
   }
 });

@@ -27,10 +27,14 @@ const RegisterScreen = () => {
       email: email,
       password: password,
     };
+    if (password.length < 6) {
+      Alert.alert("Registration Error", "Şifre en az 6 karakter olmalıdır.");
+      return;
+    }
 
     //send a post requeset to the backend API
     axios
-      .post("http://localhost:8000/register", user)
+      .post("http://10.22.241.181:8000/register", user)
       .then((response) => {
         console.log(response);
         Alert.alert(
