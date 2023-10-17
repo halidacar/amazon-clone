@@ -17,7 +17,7 @@ Amazon clone application with React Native and mongoDB
   - npm add axios
 
 # scripts
-  -  "start": "nodemon index.js", (package.json)
+  ```  "start": "nodemon index.js",``` (in package.json folder)
   -  after that in terminal go api folder and (npm start) for start mongodb
 
 ------------------------------------------------------------
@@ -30,7 +30,7 @@ Amazon clone application with React Native and mongoDB
 
 > in the LoginScreen.js and RegisterScreen.js folder
  
-> axios.post("http://localhost:8000/login", user -> change the localhost for your pc ip adress
+```axios.post("http://localhost:8000/login", user)``` -> change the localhost for your pc ip adress
 
 --------------------------------------------------------------
 
@@ -38,7 +38,7 @@ Amazon clone application with React Native and mongoDB
 > [!NOTE-2]
 
 ```
-> const transporter = nodemailer.createTransport({
+ const transporter = nodemailer.createTransport({
     //configure the email service with
     service: "gmail",
     auth: {
