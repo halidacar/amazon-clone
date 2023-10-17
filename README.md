@@ -28,7 +28,7 @@ ip adress: 0.0.0.0/0 for access anywhere
 
 # in the LoginScreen.js and RegisterScreen.js folder
  
- - print("axios.post("http://localhost:8000/login", user") 
+1.print("axios.post("http://localhost:8000/login", user") 
 -> change the localhost for your pc ip adress
 
 --------------------------------------------------------------
