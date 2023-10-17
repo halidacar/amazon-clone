@@ -32,7 +32,7 @@ Amazon clone application with React Native and mongoDB
 
 > in the LoginScreen.js and RegisterScreen.js folder
  
-```axios.post("http://localhost:8000/login", user)``` -> change the localhost for your pc ip adress
+```axios.post("http://localhost:8000/login", user)``` -> change the localhost to your pc ip adress
 
 --------------------------------------------------------------
 
