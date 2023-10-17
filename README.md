@@ -1,4 +1,4 @@
-## amazon-clone
+### Amazon-clone
 Amazon clone application with React Native and mongoDB
 
 # Create
@@ -16,10 +16,12 @@ Amazon clone application with React Native and mongoDB
   - npm i react-native-image-slider-box
   - npm add axios
 
-# scripts
+# Scripts
   ```  "start": "nodemon index.js",``` (in package.json folder)
   -  after that in terminal go api folder and (npm start) for start mongodb
 
+# Run
+- expo start
 ------------------------------------------------------------
 
 - ip adress: 0.0.0.0/0 for access anywhere
