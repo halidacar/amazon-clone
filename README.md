@@ -37,6 +37,7 @@ Amazon clone application with React Native and mongoDB
 
 > [!NOTE-2]
 
+```
 > const transporter = nodemailer.createTransport({
     //configure the email service with
     service: "gmail",
@@ -45,3 +46,4 @@ Amazon clone application with React Native and mongoDB
       pass: "Type the email app password from get the gmail security",
     },
   });
+```
