@@ -1,5 +1,5 @@
-### Amazon-clone
-Amazon clone application with React Native and mongoDB
+### Ecommerce-Project
+ecommerce project application with React Native and mongoDB
 
 # Create
 
