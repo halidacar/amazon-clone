@@ -35,6 +35,11 @@ Amazon clone application with React Native and mongoDB
 ```axios.post("http://localhost:8000/login", user)``` -> change the localhost to your pc ip adress
 
 --------------------------------------------------------------
+[!NOTE-2]
+ In api folder:
+    > .connect("mongodb+srv://userID:password@cluster0.tf88se9.mongodb.net/", {
+Replace the username and password of the project you created in mongodb
+
 
 
 > [!NOTE-2]
