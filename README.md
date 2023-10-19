@@ -14,6 +14,7 @@ ecommerce project application with React Native and mongoDB
   - npx expo install react-native-screens react-native-safe-area-context
   - npm install @react-navigation/bottom-tabs
   - npm i react-native-image-slider-box
+  - npm add react-native-dropdown-picker
   - npm add axios
 
 # Scripts
