@@ -38,7 +38,7 @@ ecommerce project application with React Native and mongoDB
 --------------------------------------------------------------
 [!NOTE-2]
  In api folder:
-``` .connect("mongodb+srv://userID:password@cluster0.tf88se9.mongodb.net/",```
+``` .connect("mongodb+srv://userID:password@cluster0",```
 
 Replace the username and password of the project you created in mongodb
 
