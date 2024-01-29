@@ -17,7 +17,7 @@ const jwt = require("jsonwebtoken");
 
 // database connection
 mongoose
-  .connect("mongodb+srv://userID:password@cluster0.tf88se9.mongodb.net/", {
+  .connect("mongodb+srv://userID:password@cluster0", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
