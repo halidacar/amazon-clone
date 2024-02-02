@@ -7,15 +7,7 @@ ecommerce project application with React Native and mongoDB
 
 # Dependencies
 
-  - npm add body-parser express mongoose jsonwebtoken no
-  demailer nodemon
-  - npm install @react-navigation/native-stack
-  - npm install @react-navigation/native
-  - npx expo install react-native-screens react-native-safe-area-context
-  - npm install @react-navigation/bottom-tabs
-  - npm i react-native-image-slider-box
-  - npm add react-native-dropdown-picker
-  - npm add axios
+  npm install
 
 # Scripts
   ```  "start": "nodemon index.js",``` (in package.json folder)
